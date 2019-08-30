@@ -1,0 +1,48 @@
+{
+  "name": "RemindMe",
+  "version": "5.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "fs-extra": "^6.0.1",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.49.2",
+    "react-test-renderer": "16.7.0",
+    "replace-in-file": "^3.4.2"
+  },
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios --simulator=\"iPhone X\"",
+    "apk": "cd android && ./gradlew assembleRelease",
+    "rename": "node ./bin/rename.js",
+    "start": "react-native start",
+    "test": "jest",
+    "dev:android:build": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res; cd android; ./gradlew clean; ./gradlew assembleDebug",
+    "prod:android:build": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle; cd android; ./gradlew clean; ./gradlew assembleRelease"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "dependencies": {
+    "create-react-context": "^0.2.3",
+    "lodash": "^4.17.11",
+    "react": "16.6.3",
+    "react-native": "0.58.0-rc.2",
+    "react-native-camera": "^1.11.2",
+    "react-native-firebase": "^5.2.0",
+    "react-native-gesture-handler": "^1.0.15",
+    "react-native-google-signin": "^1.1.0",
+    "react-native-paper": "^2.11.1",
+    "react-native-restart": "0.0.9",
+    "react-native-vector-icons": "^6.3.0",
+    "react-navigation": "^3.3.0",
+    "react-navigation-material-bottom-tabs": "^1.0.0",
+    "react-redux": "^6.0.0",
+    "react-redux-firebase": "^3.0.0-alpha.9",
+    "redux": "^4.0.1",
+    "redux-firestore": "^1.0.0-alpha.2",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0"
+  }
+}

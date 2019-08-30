@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "973188849573",
+    "firebase_url": "https://remindme-f4a60.firebaseio.com",
+    "project_id": "remindme-f4a60",
+    "storage_bucket": "remindme-f4a60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973188849573:android:4b07a06a487ce60f",
+        "android_client_info": {
+          "package_name": "com.webtexo.remindme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973188849573-n527d84lr2qcniaerj7m72f0k5d1r6i8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBITk1RUIbI3NeKxk4Itpsot1GysX4OknE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
